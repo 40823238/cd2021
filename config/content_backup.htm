@@ -1,7 +1,13 @@
 <h1>About</h1>
 <p><img alt="" height="302" src="/images/lo-res.jpg" width="302"/></p>
 <p>倉儲:<a href="https://github.com/40823238/cd2021">https://github.com/40823238/cd2021</a></p>
-<p>stage1:40823238，40823218</p>
+<p>       <a href="https://fossil.kmol.info/u/40823238/dir?ci=tip">https://fossil.kmol.info/u/40823238/dir?ci=tip</a></p>
+<p>       <a href="https://gitlab.com/40823238/cd2021">https://gitlab.com/40823238/cd2021</a></p>
+<p>       <a href="https://fossil.kmol.info:3443/40823238/cd2021">https://fossil.kmol.info:3443/40823238/cd2021</a></p>
+<p>stage1-bg3:40823238，40823218</p>
+<p>stage2-bg7:40823238，40823218 ，40823216，40823211</p>
+<p>stage3-bg6:40823211，40823214，40823216，40823218</p>
+<p>                 40823225，40823238，40823247，40823248</p>
 <h1>WORK</h1>
 <p><img alt="" height="249" src="/images/擠壓區.png" width="500"/></p>
 <p><img alt="" height="241" src="/images/push.png" width="500"/></p>
@@ -18,13 +24,288 @@
 <h1>W5</h1>
 <p><a href="/downloads/bb.xlsx">各組影片2a</a></p>
 <h1>W6</h1>
-<p>SSH</p>
-<h1>W7</h1>
-<p>WEBHOOK</p>
-<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/xlTA9OkiWGA" width="560"></iframe></p>
-<p></p><h1>W8</h1>
-<p>123</p><h1>W9</h1>
-<h1>w10</h1>
-<p>test</p>
+<p>ssh</p>
+<p><br/><br/><br/></p>
 <p></p>
+<h1>W7-webhook</h1>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/xlTA9OkiWGA" width="560"></iframe></p>
+<p></p>
+<h1>W9</h1>
+<p></p>
+<p><a href="https://40823218.github.io/stage2-bg7/content/w9%E7%B9%AA%E8%A3%BD%E9%9B%B6%E4%BB%B6%E5%9C%96.html">https://40823218.github.io/stage2-bg7/content/w9%E7%B9%AA%E8%A3%BD%E9%9B%B6%E4%BB%B6%E5%9C%96.html</a></p>
+<p></p>
+<h1>GITHUB鎖爛</h1>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/Kzkvlkj7Brg" width="560"></iframe></p>
+<p>6/23以解鎖</p>
+<div id="gtx-trans" style="position: absolute; left: -26px; top: 31.4688px;">
+<div class="gtx-trans-icon"></div>
+</div><h1>W14-task1</h1>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/dwdzQYNGG4k" width="560"></iframe></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">def stage32b(num):
+     if num[0:3] == "407":
+         return "s" + "num"
+     elif num == "40823231":
+         return "num" + "-2"
+     else :
+         return num
+ 
+teamb = []
+ 
+with open("stage3_2b.txt") as fh:
+     
+    data = fh.readlines()
+ 
+for i in range(len(data)):
+    group = data[i].rstrip("\n").split("\t")
+    teamb.append(group)
+  
+output = ""        
+seperator = "-"*10 + "&lt;br /&gt;"
+ 
+for i in teamb[0:]:
+    team = i[0]
+    leader = stage32b(i[1])
+    m1 = stage32b(i[3])
+    m2 = stage32b(i[5])
+    m3 = stage32b(i[7])
+    m4 = stage32b(i[9])
+    m5 = stage32b(i[11])
+    m6 = stage32b(i[13])
+       
+    try:
+        m7 = stage32b(i[15])
+    except:
+        m7 = ""
+    try:
+        m8 = stage32b(i[17])
+    except:
+        m8 = ""
+           
+    leaderrepo = "&lt;a href='http://github.com/" + leader + "/cd2021'&gt;" + leader + " repo&lt;/a&gt;"
+    leadersite = "&lt;a href='http://" + leader + ".github.io/cd2021'&gt;" + leader +  " site&lt;/a&gt;"
+    m1repo = "&lt;a href='http://github.com/" + m1 + "/cd2021'&gt;" + m1 + " repo&lt;/a&gt;"
+    m1site = "&lt;a href='http://" + m1 + ".github.io/cd2021'&gt;" + m1 +  " site&lt;/a&gt;"
+    m2repo = "&lt;a href='http://github.com/" + m2 + "/cd2021'&gt;" + m2 + " repo&lt;/a&gt;"
+    m2site = "&lt;a href='http://" + m2 + ".github.io/cd2021'&gt;" + m2 +  " site&lt;/a&gt;"
+    m3repo = "&lt;a href='http://github.com/" + m3 + "/cd2021'&gt;" + m3 + " repo&lt;/a&gt;"
+    m3site = "&lt;a href='http://" + m3 + ".github.io/cd2021'&gt;" + m3 +  " site&lt;/a&gt;"
+    m4repo = "&lt;a href='http://github.com/" + m4 + "/cd2021'&gt;" + m4 + " repo&lt;/a&gt;"
+    m4site = "&lt;a href='http://" + m4 + ".github.io/cd2021'&gt;" + m4 +  " site&lt;/a&gt;"
+    m5repo = "&lt;a href='http://github.com/" + m5 + "/cd2021'&gt;" + m5 + " repo&lt;/a&gt;"
+    m5site = "&lt;a href='http://" + m5 + ".github.io/cd2021'&gt;" + m5 +  " site&lt;/a&gt;"
+    m6repo = "&lt;a href='http://github.com/" + m6 + "/cd2021'&gt;" + m6 + " repo&lt;/a&gt;"
+    m6site = "&lt;a href='http://" + m6 + ".github.io/cd2021'&gt;" + m6 +  " site&lt;/a&gt;"
+    
+   
+    teamrepo = "&lt;a href='http://github.com/" + leader + "/" + team + "'&gt;" + team + " repo&lt;/a&gt;"
+    teamsite =  "&lt;a href='http://" + m1 + ".github.io/" + team + "'&gt;" + team +  " site&lt;/a&gt;"
+   
+    output += teamrepo + " | " + teamsite + " | " +leaderrepo + " | " + leadersite + " | " +m1repo + " | " + m1site + " | " +m2repo + " | " + m2site + " | " +m3repo + " | " + m3site + " | " +m4repo + " | " + m4site + " | " +m5repo + " | " + m5site + " | " +m6repo + " | " + m6site 
+       
+    if m7 != "":
+       m7repo = "&lt;a href='http://github.com/" + m7 + "/cd2021'&gt;" + m7 + " repo&lt;/a&gt;"
+       m7site = "&lt;a href='http://" + m7 + ".github.io/cd2021'&gt;" + m7 +  " site&lt;/a&gt;"  
+       output += " |  " + m7repo + "| " + m7site
+    else:
+        output += "" 
+       
+    if m8 != "":
+       m8repo = "&lt;a href='http://github.com/" + m8 + "/cd2021'&gt;" + m8 + " repo&lt;/a&gt;"
+       m8site = "&lt;a href='http://" + m8 + ".github.io/cd2021'&gt;" + m8 +  " site&lt;/a&gt;"  
+       output += " |  " + m8repo + "| " + m8site + "&lt;br /&gt;" + seperator
+    else:
+        output += "&lt;br /&gt;" + seperator
+   
+   
+print(output)</pre>
+<p><a href="http://github.com/40823245/stage3-bg1">stage3-bg1 repo</a> | <a href="http://40823251.github.io/stage3-bg1">stage3-bg1 site</a> | <a href="http://github.com/40823245/cd2021">40823245 repo</a> | <a href="http://40823245.github.io/cd2021">40823245 site</a> | <a href="http://github.com/40823251/cd2021">40823251 repo</a> | <a href="http://40823251.github.io/cd2021">40823251 site</a> | <a href="http://github.com/40823208/cd2021">40823208 repo</a> | <a href="http://40823208.github.io/cd2021">40823208 site</a> | <a href="http://github.com/40823213/cd2021">40823213 repo</a> | <a href="http://40823213.github.io/cd2021">40823213 site</a> | <a href="http://github.com/40823232/cd2021">40823232 repo</a> | <a href="http://40823232.github.io/cd2021">40823232 site</a> | <a href="http://github.com/40823234/cd2021">40823234 repo</a> | <a href="http://40823234.github.io/cd2021">40823234 site</a> | <a href="http://github.com/40823235/cd2021">40823235 repo</a> | <a href="http://40823235.github.io/cd2021">40823235 site</a> | <a href="http://github.com/40823246/cd2021">40823246 repo</a>| <a href="http://40823246.github.io/cd2021">40823246 site</a><br/>----------<br/><a href="http://github.com/40823217/stage3-bg2">stage3-bg2 repo</a> | <a href="http://40823201.github.io/stage3-bg2">stage3-bg2 site</a> | <a href="http://github.com/40823217/cd2021">40823217 repo</a> | <a href="http://40823217.github.io/cd2021">40823217 site</a> | <a href="http://github.com/40823201/cd2021">40823201 repo</a> | <a href="http://40823201.github.io/cd2021">40823201 site</a> | <a href="http://github.com/40823209/cd2021">40823209 repo</a> | <a href="http://40823209.github.io/cd2021">40823209 site</a> | <a href="http://github.com/40823210/cd2021">40823210 repo</a> | <a href="http://40823210.github.io/cd2021">40823210 site</a> | <a href="http://github.com/40823206/cd2021">40823206 repo</a> | <a href="http://40823206.github.io/cd2021">40823206 site</a> | <a href="http://github.com/40823207/cd2021">40823207 repo</a> | <a href="http://40823207.github.io/cd2021">40823207 site</a> | <a href="http://github.com/40823223/cd2021">40823223 repo</a> | <a href="http://40823223.github.io/cd2021">40823223 site</a> | <a href="http://github.com/40823224/cd2021">40823224 repo</a>| <a href="http://40823224.github.io/cd2021">40823224 site</a><br/>----------<br/><a href="http://github.com/40823236/stage3-bg3">stage3-bg3 repo</a> | <a href="http://40823202.github.io/stage3-bg3">stage3-bg3 site</a> | <a href="http://github.com/40823236/cd2021">40823236 repo</a> | <a href="http://40823236.github.io/cd2021">40823236 site</a> | <a href="http://github.com/40823202/cd2021">40823202 repo</a> | <a href="http://40823202.github.io/cd2021">40823202 site</a> | <a href="http://github.com/40823203/cd2021">40823203 repo</a> | <a href="http://40823203.github.io/cd2021">40823203 site</a> | <a href="http://github.com/40823212/cd2021">40823212 repo</a> | <a href="http://40823212.github.io/cd2021">40823212 site</a> | <a href="http://github.com/40823219/cd2021">40823219 repo</a> | <a href="http://40823219.github.io/cd2021">40823219 site</a> | <a href="http://github.com/40823222/cd2021">40823222 repo</a> | <a href="http://40823222.github.io/cd2021">40823222 site</a> | <a href="http://github.com/num-2/cd2021">num-2 repo</a> | <a href="http://num-2.github.io/cd2021">num-2 site</a> | <a href="http://github.com/40823244/cd2021">40823244 repo</a>| <a href="http://40823244.github.io/cd2021">40823244 site</a><br/>----------<br/><a href="http://github.com/40823239/stage3-bg4">stage3-bg4 repo</a> | <a href="http://snum.github.io/stage3-bg4">stage3-bg4 site</a> | <a href="http://github.com/40823239/cd2021">40823239 repo</a> | <a href="http://40823239.github.io/cd2021">40823239 site</a> | <a href="http://github.com/snum/cd2021">snum repo</a> | <a href="http://snum.github.io/cd2021">snum site</a> | <a href="http://github.com/snum/cd2021">snum repo</a> | <a href="http://snum.github.io/cd2021">snum site</a> | <a href="http://github.com/snum/cd2021">snum repo</a> | <a href="http://snum.github.io/cd2021">snum site</a> | <a href="http://github.com/snum/cd2021">snum repo</a> | <a href="http://snum.github.io/cd2021">snum site</a> | <a href="http://github.com/snum/cd2021">snum repo</a> | <a href="http://snum.github.io/cd2021">snum site</a> | <a href="http://github.com/snum/cd2021">snum repo</a> | <a href="http://snum.github.io/cd2021">snum site</a> | <a href="http://github.com/snum/cd2021">snum repo</a>| <a href="http://snum.github.io/cd2021">snum site</a><br/>----------<br/><a href="http://github.com/40823221/stage3-bg5">stage3-bg5 repo</a> | <a href="http://40823204.github.io/stage3-bg5">stage3-bg5 site</a> | <a href="http://github.com/40823221/cd2021">40823221 repo</a> | <a href="http://40823221.github.io/cd2021">40823221 site</a> | <a href="http://github.com/40823204/cd2021">40823204 repo</a> | <a href="http://40823204.github.io/cd2021">40823204 site</a> | <a href="http://github.com/40823205/cd2021">40823205 repo</a> | <a href="http://40823205.github.io/cd2021">40823205 site</a> | <a href="http://github.com/40823220/cd2021">40823220 repo</a> | <a href="http://40823220.github.io/cd2021">40823220 site</a> | <a href="http://github.com/40823228/cd2021">40823228 repo</a> | <a href="http://40823228.github.io/cd2021">40823228 site</a> | <a href="http://github.com/40823237/cd2021">40823237 repo</a> | <a href="http://40823237.github.io/cd2021">40823237 site</a> | <a href="http://github.com/40823242/cd2021">40823242 repo</a> | <a href="http://40823242.github.io/cd2021">40823242 site</a> | <a href="http://github.com/40823250/cd2021">40823250 repo</a>| <a href="http://40823250.github.io/cd2021">40823250 site</a> | <a href="http://github.com/40832244/cd2021">40832244 repo</a>| <a href="http://40832244.github.io/cd2021">40832244 site</a><br/>----------<br/><a href="http://github.com/40823225/stage3-bg6">stage3-bg6 repo</a> | <a href="http://40823214.github.io/stage3-bg6">stage3-bg6 site</a> | <a href="http://github.com/40823225/cd2021">40823225 repo</a> | <a href="http://40823225.github.io/cd2021">40823225 site</a> | <a href="http://github.com/40823214/cd2021">40823214 repo</a> | <a href="http://40823214.github.io/cd2021">40823214 site</a> | <a href="http://github.com/40823218/cd2021">40823218 repo</a> | <a href="http://40823218.github.io/cd2021">40823218 site</a> | <a href="http://github.com/40823211/cd2021">40823211 repo</a> | <a href="http://40823211.github.io/cd2021">40823211 site</a> | <a href="http://github.com/40823248/cd2021">40823248 repo</a> | <a href="http://40823248.github.io/cd2021">40823248 site</a> | <a href="http://github.com/40823247/cd2021">40823247 repo</a> | <a href="http://40823247.github.io/cd2021">40823247 site</a> | <a href="http://github.com/40823216/cd2021">40823216 repo</a> | <a href="http://40823216.github.io/cd2021">40823216 site</a> | <a href="http://github.com/40823238/cd2021">40823238 repo</a>| <a href="http://40823238.github.io/cd2021">40823238 site</a><br/>----------<br/><a href="http://github.com/40623144/stage3-bg7">stage3-bg7 repo</a> | <a href="http://40823233.github.io/stage3-bg7">stage3-bg7 site</a> | <a href="http://github.com/40623144/cd2021">40623144 repo</a> | <a href="http://40623144.github.io/cd2021">40623144 site</a> | <a href="http://github.com/40823233/cd2021">40823233 repo</a> | <a href="http://40823233.github.io/cd2021">40823233 site</a> | <a href="http://github.com/snum/cd2021">snum repo</a> | <a href="http://snum.github.io/cd2021">snum site</a> | <a href="http://github.com/40823241/cd2021">40823241 repo</a> | <a href="http://40823241.github.io/cd2021">40823241 site</a> | <a href="http://github.com/40423155/cd2021">40423155 repo</a> | <a href="http://40423155.github.io/cd2021">40423155 site</a> | <a href="http://github.com/40823227/cd2021">40823227 repo</a> | <a href="http://40823227.github.io/cd2021">40823227 site</a> | <a href="http://github.com/snum/cd2021">snum repo</a> | <a href="http://snum.github.io/cd2021">snum site</a><br/>----------</p>
+<p><br/>GITHUB鎖爛 &lt;&lt; <a href="/get_page/W14-task1/GITHUB鎖爛.html">Previous</a> <a href="/get_page/W14-task1/W16.html">Next</a> &gt;&gt; W16</p>
+<!-- footer -->
+<div class="container">
+<div class="row pt-3 mx-auto">
+<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> Copyright ©
+<script>
+document.write(new Date().getFullYear());
+</script>
+All rights reserved | This template is made with <i aria-hidden="true" class="icon-heart"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+</div>
+</div>
+<!-- for footer -->
+<p></p>
+<!-- for site wrap -->
+<p></p>
+<!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+<script src="/get_page/cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery-ui.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/popper.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+<script src="/get_page/cmsimde/static/chimper/js/aos.js"></script>
+<!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+<script src="/get_page/cmsimde/static/chimper/js/main.js"></script>
+<!-- 啟用 LaTeX equations 編輯 -->
+<p></p>
+<!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+<p></p><h1>W16</h1>
+<h2>影片</h2>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/oxb00mgsTwY" width="560"></iframe></p>
+<p><span>檔案在影片下方資訊處可下載</span></p><h2>程式碼</h2>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function moove(x,y)
+    a=0.4
+    b=0.4
+    c=math.pow((math.pow(x,2)+math.pow(y,2)),0.5)
+    s=(a+b+c)/2
+    area=math.pow((s*(s-a)*(s-b)*(s-c)),0.5)
+    h=area/(2*c)
+    deg1_base=math.atan(x/y)
+    if x&lt;0 and y&lt;0 then
+        deg1_base=deg1_base+math.pi
+    end
+    deg1_tri=math.asin(h/a)
+    deg1=deg1_base+deg1_tri
+    deg2=math.pi-(0.5*math.pi-deg1_tri)-math.acos(h/b)
+    deg3=deg2-deg1
+    sim.setJointTargetPosition(joint01,deg1)
+    sim.setJointTargetPosition(joint02,-deg2)
+    sim.setJointTargetPosition(joint03,deg3)
+end
+ 
+ 
+function sysCall_threadmain()
+    t=6
+    joint01=sim.getObjectHandle('joint1')
+    joint02=sim.getObjectHandle('joint2')
+    joint03=sim.getObjectHandle('joint3')
+    jointz=sim.getObjectHandle('jointz')
+    sim.setJointTargetPosition(joint01,0)
+    sim.setJointTargetPosition(joint02,0)
+    sim.setJointTargetPosition(joint03,0)
+    sim.setJointTargetPosition(jointz,0)
+    sim.setIntegerSignal("pad_switch",1)
+    sim.setJointTargetPosition(jointz,-0.015)
+    sim.wait(t)
+    sim.setJointTargetPosition(jointz,0)
+    sim.wait(t)
+    while sim.getSimulationState()~=sim.simulation_advancing_abouttostopre do
+    moove(0.2,0.7)
+    sim.wait(t)
+    sim.setIntegerSignal("pad_switch",0)
+    sim.wait(t)
+    sim.setIntegerSignal("pad_switch",1)
+    sim.setJointTargetPosition(jointz,-0.015)
+    sim.wait(t)
+    sim.setJointTargetPosition(jointz,0)
+    sim.wait(t)
+    moove(-0.3,-0.55)
+    sim.wait(t)
+    sim.setIntegerSignal("pad_switch",0)
+    sim.wait(t)
+    sim.setIntegerSignal("pad_switch",1)
+    sim.setJointTargetPosition(jointz,-0.015)
+    sim.wait(t)
+    sim.setJointTargetPosition(jointz,0)
+    end
+end</pre>
+<h2>remoteAPI</h2>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import math
+import random
+import time
+import math
+ 
+def moove(x,y):
+    a=0.4
+    b=0.4
+    c=math.pow((math.pow(x,2)+math.pow(y,2)),0.5)
+    s=(a+b+c)/2
+    area=math.pow((s*(s-a)*(s-b)*(s-c)),0.5)
+    h=area/(2*c)
+    deg1_base=math.atan(x/y)
+    if x&lt;0 and y&lt;0 :
+        deg1_base=deg1_base+math.pi
+    deg1_tri=math.asin(h/a)
+    deg1=deg1_base+deg1_tri
+    deg2=math.pi-(0.5*math.pi-deg1_tri)-math.acos(h/b)
+    deg3=deg2-deg1
+    vrep.simxSetJointTargetPosition(clientID,joint01,deg1,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint02,-deg2,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint03,deg3,opmode)
+ 
+print ('Start')
+  
+vrep.simxFinish(-1)
+  
+clientID = vrep.simxStart('127.0.0.1', 19997, True, True, 5000, 5)
+ 
+if clientID != -1:
+    print ('Connected to remote API server')
+ 
+    res = vrep.simxAddStatusbarMessage(
+        clientID, "This is 40823238 ",
+        vrep.simx_opmode_oneshot)
+    if res not in (vrep.simx_return_ok, vrep.simx_return_novalue_flag):
+        print("Could not add a message to the status bar.")
+ 
+ 
+    opmode = vrep.simx_opmode_oneshot_wait
+    STREAMING = vrep.simx_opmode_streaming
+ 
+ 
+    vrep.simxStartSimulation(clientID, opmode)
+    ret,joint01=vrep.simxGetObjectHandle(clientID,"joint1",opmode)
+    ret,joint02=vrep.simxGetObjectHandle(clientID,"joint2",opmode)
+    ret,joint03=vrep.simxGetObjectHandle(clientID,"joint3",opmode)
+    ret,jointz=vrep.simxGetObjectHandle(clientID,"jointz",opmode)
+     
+    vrep.simxSetJointTargetPosition(clientID,joint01,0,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint02,0,opmode)
+    vrep.simxSetJointTargetPosition(clientID,joint03,0,opmode)
+    vrep.simxSetIntegerSignal(clientID,"pad_switch",1,opmode)
+    vrep.simxSetJointTargetPosition(clientID,jointz,-0.015,opmode)
+    time.sleep(2)
+    vrep.simxSetJointTargetPosition(clientID,jointz,0,opmode)
+    while True:
+        moove(0.2,0.7)
+        time.sleep(2)
+        vrep.simxSetIntegerSignal(clientID,"pad_switch",0,opmode)
+        time.sleep(2)
+        vrep.simxSetIntegerSignal(clientID,"pad_switch",1,opmode)
+        vrep.simxSetJointTargetPosition(clientID,jointz,-0.015,opmode)
+        time.sleep(2)
+        vrep.simxSetJointTargetPosition(clientID,jointz,0,opmode)
+        moove(-0.3,-0.55)
+        time.sleep(2)
+        vrep.simxSetIntegerSignal(clientID,"pad_switch",0,opmode)
+        time.sleep(2)
+        vrep.simxSetIntegerSignal(clientID,"pad_switch",1,opmode)
+        vrep.simxSetJointTargetPosition(clientID,jointz,-0.015,opmode)
+        time.sleep(2)
+        vrep.simxSetJointTargetPosition(clientID,jointz,0,opmode)
+</pre>
+<p><br/><br/><br/></p>
+<div id="gtx-trans" style="position: absolute; left: -21px; top: 860.375px;">
+<div class="gtx-trans-icon"></div>
+</div><h2>鍵盤控制</h2>
 <p></p>
