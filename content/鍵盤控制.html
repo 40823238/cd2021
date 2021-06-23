@@ -133,9 +133,83 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W3 << <a href='W3.html'>Previous</a> <a href='W5.html'>Next</a> >> W5<br /><h1>W4</h1>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="//www.youtube.com/embed/nkELT7DOLTc" width="560"></iframe></p>
-<br />W3 << <a href='W3.html'>Previous</a> <a href='W5.html'>Next</a> >> W5</div>
+    <div id="tipue_search_content">RemoteAPI << <a href='RemoteAPI.html'>Previous</a> <br /><h1>鍵盤控制</h1>
+<p>a=第一軸順時針轉</p>
+<p>d=<span>第一軸逆時針轉</span></p>
+<p>w=<span>第二軸逆時針轉</span></p>
+<p>s=<span>第二軸順時針轉</span></p>
+<p><span>下=吸盤向下並吸住</span></p>
+<p><span>上=吸盤向上</span></p>
+<p><span>左=吸盤逆時針轉</span></p>
+<p><span>右=吸盤順時針轉</span></p>
+<p><span>空白鍵=吸盤向下並放開 </span></p>
+<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init()
+    joint01=sim.getObjectHandle('joint1')
+    joint02=sim.getObjectHandle('joint2')
+    joint03=sim.getObjectHandle('joint3')
+    jointz=sim.getObjectHandle('jointz')
+    sim.setJointTargetPosition(joint01,0)
+    sim.setJointTargetPosition(joint02,0)
+    sim.setJointTargetPosition(joint03,0)
+    sim.setJointTargetPosition(jointz,0)
+    deg1=0
+    deg2=0
+    deg3=0
+end
+
+function sysCall_actuation()
+    message,auxiliaryData=sim.getSimulatorMessage()
+    while message~=-1 do
+        if (message==sim.message_keypress) then
+            if (auxiliaryData[1]==100) then
+            print("d")
+            deg1=deg1+1
+            sim.setJointTargetPosition(joint01,deg1*math.pi/180)
+            end
+            if (auxiliaryData[1]==97) then
+            print("a")
+            deg1=deg1-1
+            sim.setJointTargetPosition(joint01,deg1*math.pi/180)
+            end
+            if (auxiliaryData[1]==119) then
+            print("w")
+            deg2=deg2+1
+            sim.setJointTargetPosition(joint02,deg2*math.pi/180)
+            end
+            if (auxiliaryData[1]==115) then
+            print("s")
+            deg2=deg2-1
+            sim.setJointTargetPosition(joint02,deg2*math.pi/180)
+            end
+            if (auxiliaryData[1]==2008) then
+            print("down")
+            sim.setIntegerSignal("pad_switch",1)
+            sim.setJointTargetPosition(jointz,-0.015)
+            end
+            if (auxiliaryData[1]==2007) then
+            print("up")
+            sim.setJointTargetPosition(jointz,0)
+            end
+            if (auxiliaryData[1]==32) then
+            print("spase")
+            sim.setJointTargetPosition(jointz,-0.015)
+            sim.setIntegerSignal("pad_switch",0)
+            end
+            if (auxiliaryData[1]==2010) then
+            print("right")
+            deg3=deg3+1
+            sim.setJointTargetPosition(joint03,deg3*math.pi/180)
+            end
+            if (auxiliaryData[1]==2009) then
+            print("left")
+            deg3=deg3-1
+            sim.setJointTargetPosition(joint03,deg3*math.pi/180)
+            end
+        end
+    message,auxiliaryData=sim.getSimulatorMessage()
+    end
+end</pre>
+<p></p><br />RemoteAPI << <a href='RemoteAPI.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
